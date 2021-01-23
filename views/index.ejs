@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <%- include('head',{}) %>
+<style>
+  body{
+    background: rgba(7, 46, 95, 0.694);
+  }
+  #content{
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 30px;
+  }
+  .layui-table tr{
+    background: rgba(7, 46, 95, 0.694);
+  }
+  .layui-table td{
+    line-height: 50px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0px;
+    
+    border-bottom: 0px dashed rgba(20,81,154,0.4);
+    margin-right: 0px;
+    
+  }
+  .text{
+    color: #242525;
+  }
+</style>
+</head>
+
+<body>
+  <%- include('nav',{}) %>
+  <div id="content">
+    
+    <table class="layui-table" >
+      <colgroup>
+        <col width="150">
+        <col width="200">
+        <col>
+      </colgroup>
+
+      <tbody>
+
+    
+        <tr>
+          <td class="text">乡关何处</td>
+          <td class="text"> 2016-11-29</td>
+          <td class="text">将他们的故事幽幽道来</td>
+          <td class="text"><a href="/details">文章详情</a></td>
+          <td class="text">删除</td>
+          <td class="text">编辑</td>
+
+        </tr>
+        
+        <tr>
+          <td class="text">许闲心</td>
+          <td class="text">2016-11-28</td>
+          <td class="text">于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+          <td class="text"><a href="/details">文章详情</a></td>
+          <td class="text">删除</td>
+          <td class="text">编辑</td>
+        </tr>
+        
+      </tbody>
+    </table>
+    
+  </div>
+
+</body>
+
+</html>
