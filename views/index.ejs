@@ -6,39 +6,43 @@
     <%= title %>
   </title>
   <%- include('head',{}) %>
-<style>
-  body{
-    background: rgba(7, 46, 95, 0.694);
-  }
-  #content{
-    margin: 0 auto;
-    width: 80%;
-    padding-top: 30px;
-  }
-  .layui-table tr{
-    background: rgba(7, 46, 95, 0.694);
-  }
-  .layui-table td{
-    line-height: 50px;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0px;
-    
-    border-bottom: 0px dashed rgba(20,81,154,0.4);
-    margin-right: 0px;
-    
-  }
-  .text{
-    color: #242525;
-  }
-</style>
+  <style>
+    body {
+      background: rgba(7, 46, 95, 0.694);
+    }
+
+    #content {
+      margin: 0 auto;
+      width: 80%;
+      padding-top: 30px;
+    }
+
+    .layui-table tr {
+      background: rgba(7, 46, 95, 0.694);
+    }
+
+    .layui-table td {
+      line-height: 50px;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0px;
+
+      border-bottom: 0px dashed rgba(20, 81, 154, 0.4);
+      margin-right: 0px;
+
+    }
+
+    .text {
+      color: #242525;
+    }
+  </style>
 </head>
 
 <body>
   <%- include('nav',{}) %>
   <div id="content">
-    
-    <table class="layui-table" >
+
+    <table class="layui-table">
       <colgroup>
         <col width="150">
         <col width="200">
@@ -47,7 +51,7 @@
 
       <tbody>
 
-    
+
         <tr>
           <td class="text">乡关何处</td>
           <td class="text"> 2016-11-29</td>
@@ -57,7 +61,7 @@
           <td class="text">编辑</td>
 
         </tr>
-        
+
         <tr>
           <td class="text">许闲心</td>
           <td class="text">2016-11-28</td>
@@ -66,10 +70,10 @@
           <td class="text">删除</td>
           <td class="text">编辑</td>
         </tr>
-        
+
       </tbody>
     </table>
-    
+
   </div>
 
 </body>

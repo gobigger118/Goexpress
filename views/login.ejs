@@ -4,7 +4,7 @@
 <head>
     <title>
         登录
-      </title>
+    </title>
     <%- include('head',{}) %>
     <style>
         body {
@@ -23,13 +23,14 @@
         }
 
         .denglu {
-           color: #2b2d2d;
+            color: #2b2d2d;
             margin: 20px;
         }
 
         .span1 {
             color: rgba(248, 246, 246, 0.7);
         }
+
         .span1:hover {
             color: rgba(233, 228, 228, 0.7);
         }
@@ -38,14 +39,14 @@
             width: 400px;
             background-color: #494c4c;
         }
-    
     </style>
 </head>
 <%- include('nav',{}) %>
+
 <body>
     <div class="layui-container">
         <div class="layui-row">
-            <form class="layui-form" action="">
+            <form class="layui-form" action="/users/addUser">
                 <h1 class="denglu">请登录</h1>
                 <div class="layui-form-item item">
                     <div class="layui-input-block">
@@ -64,10 +65,10 @@
                 <div class="layui-form-item">
                     <div class="layui-input-block blo">
                         <button class="layui-btn">登录</button>
-                        
+
                     </div>
                 </div>
-                <span class="span">已有账号，<a href="/signIn" class="span1">去注册</a></span>
+                <span class="span">已有账号，去<a href="/signIn" class="span1">注册</a></span>
             </form>
         </div>
     </div>
