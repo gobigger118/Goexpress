@@ -4,7 +4,7 @@
 <head>
     <title>
         注册
-    </title>
+      </title>
     <%- include('head',{}) %>
     <style>
         body {
@@ -46,33 +46,41 @@
         }
     </style>
 </head>
+
 <body>
-    <!-- <%- include('nav',{}) %> -->
     <div class="layui-container">
         <div class="layui-row">
-            <form class="layui-form" action="/users/addUser"method='post'>
-                <h1 class="zhuche">用户注册</h1>
+            <form class="layui-form"  action="users/addUser" method="post">
+                <h1 class="txt">用户注册</h1>
                 <div class="layui-form-item item">
+                    <!-- <label class="layui-form-label">用户名</label> -->
                     <div class="layui-input-block">
-                        <input type="text" name="username" required placeholder="请输入账号" autocomplete="off"
+                        <input type="text" name="userName"  placeholder="请输入账号" autocomplete="off"
                             class="layui-input">
                     </div>
                 </div>
+
                 <div class="layui-form-item item">
+                    <!-- <label class="layui-form-label">密码</label> -->
                     <div class="layui-input-block">
-                        <input type="password" name="password" required placeholder="请输入密码" autocomplete="off"
-                            class="layui-input">
-                 </div>
-                </div>
-                <div class="layui-form-item item">
-                    <div class="layui-input-block">
-                        <input type="password" name="password1" required placeholder="确认密码" autocomplete="off"
+                        <input type="password" name="password"  placeholder="请输入密码" autocomplete="off"
                             class="layui-input">
                     </div>
+
                 </div>
+
+                <div class="layui-form-item item">
+                    <!-- <label class="layui-form-label">密码</label> -->
+                    <div class="layui-input-block">
+                        <input type="password" name="passwordC" required placeholder="确认密码" autocomplete="off"
+                            class="layui-input">
+                    </div>
+
+                </div>
+
                 <div class="layui-form-item">
                     <div class="layui-input-block blo">
-                        <input type="submit" class="layui-btn" value="注册">
+                        <button class="layui-btn" class="zhuche">注册</button>
 
                     </div>
                 </div>

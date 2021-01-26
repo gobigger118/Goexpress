@@ -29,21 +29,23 @@
         }
     </style>
 </head>
-
+<script>
+    let date = new Date()
+</script>
 <body>
     <%- include('nav',{}) %>
     <div class="layui-container">
         <div class="layui-row">
+            <form class="layui-form" action="users/add" method="POST"> 
             <div class="layui-input-block">
-                <input type="text" name="title" required lay-verify="required" placeholder="请输入文章标题" autocomplete="off"
+                <input type="text" name="texthead" required lay-verify="required" placeholder="请输入文章标题" autocomplete="off"
                     class="layui-input">
             </div>
-
             <div class="area">
-                <textarea name="" id="" cols="147" rows="15" placeholder="请输入文章内容"></textarea>
+                <textarea name="content" id="" cols="147" rows="15" placeholder="请输入文章内容"></textarea>
             </div>
-
-            <button type="button" class="layui-btn layui-btn-sm">发布</button>
+            <button type="submit" class="layui-btn layui-btn-sm">发布</button>
+        </form>
         </div>
     </div>
 </body>
